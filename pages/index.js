@@ -41,7 +41,7 @@ export default function Home() {
             entire albums, instead of being limited to Release Radar's traditional ~30 some track count.
           </p>
           <p>
-            Spotify personnel eventually gave an official explanation on how Release Rader functions, and why it was having the error it does. With that I've decided to discontinue this web application.
+            Spotify personnel eventually gave an official explanation on how Release Radar functions, and why it was having the error it does. With that I've decided to discontinue this web application.
             Even with its faults, Release Radar provides a good enough starting point, if you simply ignore the incorrectly tagged songs. I have other projects in my backlog,
             and I don't have the time to dedicate to keep this going.
           </p>

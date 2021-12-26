@@ -31,7 +31,7 @@ const Header = () => {
                                 {navLinks.map((link, i) => {
                                     return (
                                         <li className='hover:bg-light-black' key={i}>
-                                            <a href={ link.href } className='text-bold p-3 block'>{ link.label }</a>
+                                            <a href={ link.href } className='text-bold p-3 block' onClick={handleClick}>{ link.label }</a>
                                         </li>
                                     )
                                 })}
