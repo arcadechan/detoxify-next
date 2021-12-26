@@ -16,18 +16,18 @@ const Header = () => {
     return (
         <>
             <header className='py-4'>
-                <div className='px-3 mx-auto max-w-screen-md'>
-                    <nav className='flex flex-wrap md:flex-nowrap text-center justify-between px-4 py-2'>
+                <div className='px-3 mx-auto max-w-screen-lg'>
+                    <nav className='flex flex-wrap md:flex-nowrap text-center justify-between px-4 py-2 items-center'>
                         <a href="/">
-                            <img id='navbar-detoxify-logo' src="/detoxify.png" alt=""/>
+                            <img id='navbar-detoxify-logo' className='max-w-none' src="/detoxify.png" alt=""/>
                         </a>
                         <button type='button' onClick={handleClick} className='md:hidden'>
                             <svg id='navbar-menu-icon'>
                                 <use xlinkHref='/svg-sprites.svg#menu'></use>
                             </svg>
                         </button>
-                        <div id='nav-links' className={`${ active ? '' : 'hidden' } md:flex mt-4 md:mt-0 basis-full md:basis-auto`}>
-                            <ul className='flex flex-col pl-0 mb-0 text-left'>
+                        <div id='nav-links' className={`${ active ? '' : 'hidden' } md:flex mt-4 md:mt-0 basis-full`}>
+                            <ul className='flex flex-col md:flex-row pl-0 mb-0 text-left'>
                                 {navLinks.map((link, i) => {
                                     return (
                                         <li className='hover:bg-light-black' key={i}>
