@@ -10,10 +10,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <section className='py-16'>
+      <section id='home' className='py-16'>
         <div className='max-w-screen-lg px-5 mx-auto text-center w-full'>
-          <h1 class='text-7xl font-bold'>A tool for a better experience.</h1>
+          <h1 className='text-7xl font-bold'>A tool for a better experience.</h1>
+          <h4 className='text-lg font-bold'>What did Detoxed Release Radar do?</h4>
+          <br />
+          <p><i><b>Detoxed Release Radar</b></i> created a custom <b>Your Release Radar</b> in your library.</p>
+          <p><i><b>Detoxed Release Radar</b></i> fixed the issue with seeing wrong artist releases from artists you didn't follow.</p>
+          <p><i><b>Detoxed Release Radar</b></i> looked at the last 3 albums and 3 singles released within the last month by each artist you follow to add to your playlist.</p>
+          <p><i><b>Detoxed Release Radar</b></i> included complete singles and album releases, as opposed to Release Radar's 30 track limit.</p>
+          <br />
         </div>
+      </section>
+      <section id='about'>
+        <h3 clasName='text-md font-bold'>The issue with <i>Your Release Radar.</i></h3>
+        <p>
+          <i><b>Your Release Radar</b></i> is a wonderful source of new music for Spotify users, but it was plagued with one key issue: incorrect artists suggestions.
+          The issue ultimately lies in incorrect song tagging where either new track submissions will include an artist's name that happens to be the same name as a 
+          multitude of other potential artists who share the same name. Track submissions being a manually approved workflow, resulted in the wrong artist accounts 
+          being tagged in music that had nothing to do with the artists people actually follow.
+        </p>
+        <p>
+          I spent some time in Spotify's community raising this issue and explaining my findings, and when it became clear that there was no fix in site a year later,
+          I decided to try to find a solution for myself that used Spotify's Web API. I was able to develop a tool that not only filtered out the wrong artists I was
+          being suggested, but also generated a large playlist contain entire album track listings, instead of being limited to Release Radar's traditional ~30 some track count.
+        </p>
+        <p>
+          With Spotify's official explanation on how Release Rader functions, and why it has the error it does, I've decided to discontinue this web application.
+          Even with its faults, Release Radar provides a good enough starting point, if you simply ignore the incorrectly tagged songs. I have other projects in my backlog,
+          and I don't have the time to dedicate to keep this going. It was a wonderful learning experience, and maybe the detoxify.dev name may make a return in another form or service.
+        </p>
+        <p>Thanks for those of you who used the app across the year. Seeing monthly spikes ranging from 1k - 3k album API requests was a surreal experience for me as a developer.</p>
+        <p>This isn't goodbye forever, just more of a 'see you later.'</p>
+      </section>
+      <section id='contact'>
+        <form action=""></form>
       </section>
       <Footer/>
     </div>
