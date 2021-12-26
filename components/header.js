@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <>
-            <header className='py-4'>
+            <header className='py-4 sticky top-0 bg-dark-gray border-b border-light-black'>
                 <div className='px-3 mx-auto max-w-screen-lg'>
                     <nav className='flex flex-wrap md:flex-nowrap text-center justify-between px-4 py-2 items-center'>
                         <a href="/">

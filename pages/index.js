@@ -10,42 +10,67 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <section id='home' className='py-16'>
-        <div className='max-w-screen-lg px-5 mx-auto text-center w-full'>
-          <h1 className='text-7xl font-bold'>A tool for a better experience.</h1>
-          <h4 className='text-lg font-bold'>What did Detoxed Release Radar do?</h4>
-          <br />
-          <p><i><b>Detoxed Release Radar</b></i> created a custom <b>Your Release Radar</b> in your library.</p>
-          <p><i><b>Detoxed Release Radar</b></i> fixed the issue with seeing wrong artist releases from artists you didn't follow.</p>
-          <p><i><b>Detoxed Release Radar</b></i> looked at the last 3 albums and 3 singles released within the last month by each artist you follow to add to your playlist.</p>
-          <p><i><b>Detoxed Release Radar</b></i> included complete singles and album releases, as opposed to Release Radar's 30 track limit.</p>
-          <br />
-        </div>
-      </section>
-      <section id='about'>
-        <h3 clasName='text-md font-bold'>The issue with <i>Your Release Radar.</i></h3>
-        <p>
-          <i><b>Your Release Radar</b></i> is a wonderful source of new music for Spotify users, but it was plagued with one key issue: incorrect artists suggestions.
-          The issue ultimately lies in incorrect song tagging where either new track submissions will include an artist's name that happens to be the same name as a 
-          multitude of other potential artists who share the same name. Track submissions being a manually approved workflow, resulted in the wrong artist accounts 
-          being tagged in music that had nothing to do with the artists people actually follow.
-        </p>
-        <p>
-          I spent some time in Spotify's community raising this issue and explaining my findings, and when it became clear that there was no fix in site a year later,
-          I decided to try to find a solution for myself that used Spotify's Web API. I was able to develop a tool that not only filtered out the wrong artists I was
-          being suggested, but also generated a large playlist contain entire album track listings, instead of being limited to Release Radar's traditional ~30 some track count.
-        </p>
-        <p>
-          With Spotify's official explanation on how Release Rader functions, and why it has the error it does, I've decided to discontinue this web application.
-          Even with its faults, Release Radar provides a good enough starting point, if you simply ignore the incorrectly tagged songs. I have other projects in my backlog,
-          and I don't have the time to dedicate to keep this going. It was a wonderful learning experience, and maybe the detoxify.dev name may make a return in another form or service.
-        </p>
-        <p>Thanks for those of you who used the app across the year. Seeing monthly spikes ranging from 1k - 3k album API requests was a surreal experience for me as a developer.</p>
-        <p>This isn't goodbye forever, just more of a 'see you later.'</p>
-      </section>
-      <section id='contact'>
-        <form action=""></form>
-      </section>
+      <main className='mx-auto px-10 max-w-screen-lg'>
+        <div id='home' className='relative block -top-32'></div>
+        <section className='py-10'>
+          <div className='max-w-screen-lg px-5 mx-auto text-center w-full'>
+            <h1 className='text-5xl font-bold'>Detoxify is shutting down.</h1>
+            <h4 className='text-2xl font-bold mt-8'>What did Detoxify do?</h4>
+            <div className='my-8'>
+              <p><i><b>Detoxify</b></i> created a custom <b>Your Release Radar</b> in your library.</p>
+              <p><i><b>Detoxify</b></i> fixed the issue with seeing wrong artist releases from artists you didn't follow.</p>
+              <p><i><b>Detoxify</b></i> looked at the last 3 albums and 3 singles released within the last month by each artist you follow to add to your playlist.</p>
+              <p><i><b>Detoxify</b></i> included complete singles and album releases, as opposed to Release Radar's 30 track limit.</p>
+            </div>
+          </div>
+        </section>
+        <hr className='my-5'/>
+        <div id='about' className='relative block -top-32'></div>
+        <section className='py-10'>
+          <h1 className='text-5xl font-bold text-center mb-5'>about</h1>
+          <h3 className='text-2xl font-bold mb-5 text-center'>The issue with <i>Your Release Radar.</i></h3>
+          <p>
+            <i><b>Your Release Radar</b></i> is a wonderful source of new music for Spotify users, but it's been plagued with one key issue: incorrect artist suggestions.
+            The issue ultimately lies in the fact that many artists around the world share the same name, and they end up being attributed as the wrong artist in their  track's
+            metadata. Track submissions, being a manually approved workflow, result in errors like a rapper named Devo being marked as the 80s new wave Devo.
+          </p>
+          <p>
+            I discovered others had encountered this same experience, so I spent some time in Spotify's community raising this issue and explaining my personal findings.
+            When it became clear that there was no fix in sight, I decided to find a solution that used Spotify's very own Web API.
+            I was able to develop a tool that not only filtered out the wrong artists I was being suggested, but also generated a larger playlist containing
+            entire albums, instead of being limited to Release Radar's traditional ~30 some track count.
+          </p>
+          <p>
+            Spotify personnel eventually gave an official explanation on how Release Rader functions, and why it was having the error it does. With that I've decided to discontinue this web application.
+            Even with its faults, Release Radar provides a good enough starting point, if you simply ignore the incorrectly tagged songs. I have other projects in my backlog,
+            and I don't have the time to dedicate to keep this going.
+          </p>
+          <p>
+            This was a wonderful learning experience, and maybe the site will make a return in another form or service in the future.
+            Seeing monthly spikes ranging from 1k - 3k album API requests was a surreal experience for me as a developer.
+            Thanks for those of you who used the app across the year.
+          </p>
+          <p>This isn't goodbye forever, just more of a 'see you later.'</p>
+        </section>
+        <hr className='my-5'/>
+        <div id='contact' className='relative block -top-32'></div>
+        <section className='py-10'>
+          <h1 className='text-5xl font-bold text-center mb-5'>contact</h1>
+          <div className='text-center mb-5'>
+            <p>If you have any questions or feedback, please drop me a line!</p>
+            <small>Fields marked with an asterisk(*) are required.</small>
+          </div>
+          <form id='contact-form' name='contact' method='POST' data-netlify='true'>
+            <input type="text" id='fname' placeholder='Your name' name='name'/>
+            <input type="email" id='email' placeholder='Enter email *' name='email' required='required'/>
+            <textarea name="message" id="message" rows="5" placeholder='Enter your message *' required='required'></textarea>
+            <div className='my-10 w-full md:w-1/3 mx-auto'>
+              <button id='contact-form-submit' type='submit' className='btn-spotify w-full font-bold text-xl md:text-3xl'>Submit</button>
+            </div>
+          </form>
+        </section>
+        <hr className='my-5'/>
+      </main>
       <Footer/>
     </div>
   )
