@@ -10,9 +10,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className='main'>
-        <h1>Test</h1>
-      </main>
+      <section className='py-16'>
+        <div className='max-w-screen-lg px-5 mx-auto text-center w-full'>
+          <h1 class='text-7xl font-bold'>A tool for a better experience.</h1>
+        </div>
+      </section>
       <Footer/>
     </div>
   )
