@@ -19,9 +19,7 @@ const Header = () => {
             <header className='py-4 sticky top-0 bg-dark-gray border-b border-light-black'>
                 <div className='px-3 mx-auto max-w-screen-lg'>
                     <nav className='flex flex-wrap md:flex-nowrap text-center justify-between px-4 py-2 items-center'>
-                        <a href="/">
-                            <img id='navbar-detoxify-logo' className='max-w-none' src="/detoxify.png" alt=""/>
-                        </a>
+                        <img id='navbar-detoxify-logo' className='max-w-none' src="/detoxify.png" alt=""/>
                         <button type='button' onClick={handleClick} className='md:hidden'>
                             <svg id='navbar-menu-icon'>
                                 <use xlinkHref='/svg-sprites.svg#menu'></use>
