@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import { Footer, Header } from "../../components"
+import { Footer, Header } from "../components"
 
 export default function Success() {
     return (
