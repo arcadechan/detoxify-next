@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { Footer, Header } from "../../components"
 
 export default function Success() {
@@ -13,9 +14,11 @@ export default function Success() {
             <main className='mx-auto px-10 max-w-screen-lg'>
                 <section className='py-10 text-center'>
                     <h1 className='text-5xl font-bold mt-5 mb-10'>Thanks for your form submission!</h1>
-                    <a href="/">
-                        <button className='btn-spotify w-full md:w-1/3 font-bold text-xl md:text-3xl'>Go Back</button>
-                    </a>
+                    <Link href='/#home' passHref>
+                        <a>
+                            <button className='btn-spotify w-full md:w-1/3 font-bold text-xl md:text-3xl'>Go Back</button>
+                        </a>
+                    </Link>
                 </section>
                 <hr className='my-5'/>
             </main>
