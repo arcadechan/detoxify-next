@@ -12,7 +12,7 @@ const Footer = () => {
                     {links.map( ( link, i ) => {
                         return (
                             <div className='px-3 inline-block' key={i}>
-                                <a href={ link.href } title={ link.name } className='' target='_blank'>
+                                <a href={ link.href } title={ link.name } className='' target='_blank' rel='noreferrer'>
                                     <img src={`/${ link.iconName }`} alt={ link.name } className='h-8'/>
                                 </a>
                             </div>
