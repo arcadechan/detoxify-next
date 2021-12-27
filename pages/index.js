@@ -117,7 +117,7 @@ export default function Home() {
             <p>If you have any questions or feedback, please drop me a line!</p>
             <small>Fields marked with an asterisk(*) are required.</small>
           </div>
-          <form id='contact-form' name='contact' method='POST' action='/success.html' data-netlify='true' netlify-honeypot='bot-field' data-netlify-recaptcha='true'>
+          <form id='contact-form' name='contact' method='POST' action='/success' data-netlify='true' netlify-honeypot='bot-field' data-netlify-recaptcha='true'>
             <p className='hidden'>Leave blank if you&apos;re human: <input name='bot-field'/></p>
             <input type='hidden' name='form-name' value='contact'/>
             <input type="text" id='fname' placeholder='Your name' name='name'/>
