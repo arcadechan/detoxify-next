@@ -117,7 +117,8 @@ export default function Home() {
             <p>If you have any questions or feedback, please drop me a line!</p>
             <small>Fields marked with an asterisk(*) are required.</small>
           </div>
-          <form id='contact-form' name='contact' method='POST' data-netlify='true'>
+          <form id='contact-form' name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field' data-netlify-recaptcha='true'>
+            <input type='hidden' name='contact' value='contact'/>
             <input type="text" id='fname' placeholder='Your name' name='name'/>
             <input type="email" id='email' placeholder='Enter email *' name='email' required='required'/>
             <textarea name="message" id="message" rows="5" placeholder='Enter your message *' required='required'></textarea>
